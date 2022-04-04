@@ -1,5 +1,15 @@
 apply plugin: 'com.android.library'
 
+repositories {
+  maven {
+    url "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+    credentials {
+      username 'braintree_team_sdk'
+      password 'AKCp8jQcoDy2hxSWhDAUQKXLDPDx6NYRkqrgFLRc3qDrayg6rrCbJpsKKyMwaykVL8FWusJpp'
+    }
+  }
+}
+
 android {
   compileSdkVersion rootProject.ext.compileSdkVersion
 }
@@ -7,4 +17,6 @@ android {
 dependencies {
   //noinspection GradleDynamicVersion
   implementation 'com.facebook.react:react-native:+'
+
+  implementation 'com.paypal.checkout:android-sdk:0.6.1'
 }
