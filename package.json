@@ -1,0 +1,35 @@
+{
+  "name": "react-native-mo-paypal",
+  "version": "0.1.1",
+  "description": "react-native component for paypal",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "package.json",
+    "src/*",
+    "lib/*",
+    "android",
+    "ios/**/*.{h,m,pbxproj}",
+    "*.{podspec,gradle,sh,js}"
+  ],
+  "devDependencies": {
+    "@types/react-native": "^0.67.3",
+    "react": "^18.0.0",
+    "react-native": "^0.68.0",
+    "typescript": "^4.1.5"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mo22/react-native-mo-paypal.git"
+  },
+  "author": "Moritz Moeller <mm@mxs.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mo22/react-native-mo-paypal/issues"
+  },
+  "homepage": "https://github.com/mo22/react-native-mo-paypal#readme"
+}
