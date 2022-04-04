@@ -15,4 +15,5 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "9.0"
   spec.source_files = "ios/**/*.{h,m}"
   spec.dependency "React-Core"
+  spec.dependency "PayPalCheckout"
 end
