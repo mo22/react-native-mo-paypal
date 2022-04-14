@@ -124,7 +124,7 @@ RCT_EXPORT_METHOD(test:(NSDictionary*)args resolve:(RCTPromiseResolveBlock)resol
                 @"result": @"approved",
                 @"t1": arg.data.payerID,
                 @"t2": arg.data.ecToken,
-                @"t3": arg.data.paymentID,
+                @"t3": (arg.data.paymentID == nil) ? [NSNull null] : arg.data.paymentID,
             });
         }
         onShippingChange:nil
