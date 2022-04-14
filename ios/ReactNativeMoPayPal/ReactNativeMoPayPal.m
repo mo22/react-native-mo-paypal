@@ -122,9 +122,9 @@ RCT_EXPORT_METHOD(test:(NSDictionary*)args resolve:(RCTPromiseResolveBlock)resol
             NSLog(@"onApprove data %@", arg.data);
             resolve(@{
                 @"result": @"approved",
-//                @"t1": arg.data.payerID,
-//                @"t2": arg.data.ecToken,
-//                @"t3": arg.data.paymentID,
+                @"t1": arg.data.payerID,
+                @"t2": arg.data.ecToken,
+                @"t3": arg.data.paymentID,
             });
         }
         onShippingChange:nil
